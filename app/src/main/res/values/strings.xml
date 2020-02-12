@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Contador</string>
+    <string name="cadena_propia">Esta sera mi cadena</string>
 </resources>

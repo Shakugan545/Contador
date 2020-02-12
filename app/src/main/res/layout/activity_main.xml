@@ -4,29 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foreground="@android:color/transparent"
     tools:context=".MainActivity">
 
 
     <Button
         android:id="@+id/btnIncrementar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/Cgray"
         android:text="incrementar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etiquetaMostrar"
-        app:layout_constraintVertical_bias="0.342" />
+        app:layout_constraintVertical_bias="0.245" />
 
     <TextView
         android:id="@+id/etiquetaMostrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:text="TextView"
-        android:textSize="30sp"
+        android:layout_marginTop="140dp"
+        android:background="@android:drawable/ic_notification_overlay"
+        android:text="Contador"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndecrementar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/Cgray"
+        android:text="Decrementar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etiquetaMostrar"
+        app:layout_constraintVertical_bias="0.686" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
